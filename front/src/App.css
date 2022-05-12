@@ -117,3 +117,14 @@ body {
 .input_item{
     padding-left: 20px;
 }
+
+.buttonDelete{
+    background-color: red;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.buttonDelete:hover{
+    background-color: rgb(189, 63, 63);
+}
