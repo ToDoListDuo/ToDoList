@@ -5,12 +5,14 @@ export const getData = async() => {
     return data;
 }
 
-export const deleteItem = (id) =>{
-    axios.delete(`https://localhost:44379/api/item/delete/${id}`);
-    window.location.reload();
+export const deleteItem = async(id) =>{
+    await axios.delete(`https://localhost:44379/api/item/delete/${id}`);
 }
 
-export const createItem = (item) => {
-    axios.post(`https://localhost:44379/api/item/create`, item);
-    window.location.reload();
+export const createItem = async(item) => {
+    await axios.post('https://localhost:44379/api/item/create', item);
+}
+
+export const updateItem = async(item) => {
+    await axios.put('https://localhost:44379/api/item/update', item);
 }

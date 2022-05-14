@@ -74,9 +74,6 @@ body {
 
 .todo_item:hover {
     cursor: pointer;
-    transition: all .8s ease; 
-    background-color:rgba(0, 0, 0, 0.919);
-    color: burlywood;
 }
 
 .todo_item > input[type= 'text'] {
@@ -119,12 +116,8 @@ body {
 }
 
 .buttonDelete{
-    background-color: red;
+    background-color: gold;
     border: none;
     padding: 9px;
     cursor: pointer;
-}
-
-.buttonDelete:hover{
-    background-color: rgb(189, 63, 63);
 }
