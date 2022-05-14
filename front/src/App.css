@@ -115,9 +115,18 @@ body {
     padding-left: 20px;
 }
 
-.buttonDelete{
+.actionsButtons{
     background-color: gold;
     border: none;
     padding: 9px;
     cursor: pointer;
+}
+
+.completeTask{
+    text-decoration: line-through;
+}
+
+.inputEditTask{
+    border: none;
+    padding: 8px;
 }
