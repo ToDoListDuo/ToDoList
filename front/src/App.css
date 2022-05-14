@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+
+
+
+:root {
+    background-color: gold;
+    
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-color: gold;
+    font: bold 2rem, sans-serif ;
+
+}
+
+.todo {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+ 
+ 
+.todo_title {
+    display:  flex;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    font-size: 3rem;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 4px black;
+    color: gold;
+}
+
+.todo_item > div {
+    width: 75%;
+}
+
+.todo_list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo_item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow:  1px 0px 3px rgba(0, 0, 0, 0.405);
+}
+
+.todo_item:hover {
+    cursor: pointer;
+}
+
+.todo_item > input[type= 'text'] {
+    border: none;
+    width: 75%;
+    font: inherit;
+
+}
+
+.todo_item > input[type='button'],
+.todo_item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
+
+.todo_new-item {
+     display: flex;
+     background-color: rgb(236, 232, 115);
+     width: 100%;
+     height: 60px;
+     justify-content: space-evenly;
+     padding: 10px 0;
+     box-shadow: 1px 1px 5px black;
+     margin: 20px;
+     font: inherit;
+}
+
+.todo_new-item > input {
+    
+    background-color: rgb(236, 232, 115);
+    border: none;
+    width: 100%;
+    outline: none;
+    font: inherit ;
+}
+
+.input_item{
+    padding-left: 20px;
+}
+
+.actionsButtons{
+    background-color: gold;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.completeTask{
+    text-decoration: line-through;
+}
+
+.inputEditTask{
+    border: none;
+    padding: 8px;
+}
